@@ -7,9 +7,10 @@ body {
   margin-right: 24px;
 }
 
-h1 {
+/* logo and header */
+
+#header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 32px;
 }
 
 .first {
@@ -20,6 +21,47 @@ h1 {
   color: grey;
 }
 
-a {
+.logo {
   text-decoration: none;
+  position: relative;
+  bottom: 20px;
+}
+
+.colmar {
+  position: relative;
+  bottom: 60px;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+/* navigation bar */
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  border-right: 16px solid turquoise;
+  display: inline;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+li a:hover {
+  background-color: lightgrey;
+}
+
+nav {
+  float: right;
 }
