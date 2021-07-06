@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 32px;
+}
+
+.first {
+  color: darkslategrey;
+}
+
+.second {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
