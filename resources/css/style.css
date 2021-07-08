@@ -65,3 +65,32 @@ li a:hover {
 nav {
   float: right;
 }
+
+/* banner section */
+#banner {
+  background-color: lightgray;
+  padding: 32px 24px;
+}
+
+.reading {
+  vertical-align: middle;
+}
+
+.banner-text {
+  display: inline-block;
+  padding-left: 24px;
+}
+
+button {
+  padding: 10px;
+  display: inline-block;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+}
+
+p {
+  font-size: 18px;
+}
