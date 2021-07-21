@@ -94,3 +94,29 @@ button {
 p {
   font-size: 18px;
 }
+
+/* Practice section */
+
+#practice {
+  padding: 32px 24px;
+  display: inline-block;
+}
+
+.student {
+  vertical-align: middle;
+}
+
+.practice-text {
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  padding-left: 24px;
+}
+
+/* Images on the RHS */
+
+#orientation {
+  display: inline-block;
+  position: relative;
+  left: 60%;
+}
