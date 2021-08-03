@@ -117,8 +117,61 @@ p {
 
 /* Images on the RHS */
 
-#orientation {
-  display: inline-block;
+#RHS-block {
   position: relative;
-  left: 60%;
+  top: 0;
+}
+
+.orientation-img {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 130px;
+  top: 160px;
+}
+
+.orientation-text {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  right: 30px;
+  top: 160px;
+}
+
+.campus-img {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 130px;
+  top: 350px;
+}
+
+.campus-text {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  right: 30px;
+  top: 350px;
+}
+
+.guest-img {
+  display: inline-block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 130px;
+  top: 540px;
+}
+
+.guest-text {
+  display: inline-block;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  right: 30px;
+  top: 540px;
 }
