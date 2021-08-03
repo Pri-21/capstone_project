@@ -41,14 +41,14 @@ ul {
 }
 
 li {
-  border-right: 16px solid turquoise;
   display: inline;
   padding-top: 17px;
   padding-bottom: 17px;
+  padding-right: 17px;
 }
 
 li:last-child {
-  border-right: none;
+  padding-right: 0;
 }
 
 li a {
@@ -70,6 +70,8 @@ nav {
 #banner {
   background-color: lightgray;
   padding: 32px 24px;
+  position: absolute;
+  top: 80px;
 }
 
 .reading {
