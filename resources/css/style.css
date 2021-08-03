@@ -102,6 +102,10 @@ p {
 #practice {
   padding: 32px 24px;
   display: inline-block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 570px;
 }
 
 .student {
@@ -112,14 +116,13 @@ p {
   display: inline-block;
   width: 60%;
   height: auto;
-  padding-left: 24px;
 }
 
-/* Images on the RHS */
+/* Images and text on the RHS */
 
 #RHS-block {
   position: relative;
-  top: 0;
+  top: -268px;
 }
 
 .orientation-img {
@@ -174,4 +177,9 @@ p {
   height: 300px;
   right: 30px;
   top: 540px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: blue;
 }
