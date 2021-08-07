@@ -12,6 +12,7 @@ body {
 
 #header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 0;
 }
 
 .first {
@@ -61,42 +62,38 @@ li a {
 
 li a:hover {
   background-color: lightgrey;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 nav {
   float: right;
 }
 
-/* banner section 
+/* banner section */
 #banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   background-color: lightgray;
-  padding: 32px 24px;
-  position: absolute;
-  top: 80px;
 }
-
-.reading {
-  vertical-align: middle;
+.reading img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 32px 24px;
 }
 
 .banner-text {
-  display: inline-block;
-  padding-left: 24px;
+  align-self: center;
 }
 
-button {
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  background-color: grey;
-  color: white;
-  width: 100%;
-  font-size: 16px;
+.button {
+  width: auto;
 }
 
-p {
-  font-size: 18px;
-} */
+input {
+  padding: 10px 40px;
+}
 
 /*second section*/
 
@@ -106,7 +103,7 @@ p {
   grid-column-gap: 50px;
   grid-auto-columns: minmax(200px, auto);
   grid-auto-rows: minmax(200px, auto);
-  padding-bottom: 32px;
+  padding: 32px 0px;
 }
 
 .practice img {
