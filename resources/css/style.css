@@ -12,7 +12,7 @@ body {
 
 #header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 0;
+  height: 64px;
 }
 
 .first {
@@ -171,12 +171,12 @@ input {
   text-align: center;
   color: black;
   grid-column: 1 / 4;
-  grid-row: 1 / 1;
 }
 
 #third-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   grid-gap: 32px;
   grid-auto-columns: minmax(200px, auto);
   grid-auto-rows: minmax(200px, auto);
@@ -221,4 +221,9 @@ footer {
   padding-right: 10px;
   padding-top: 0;
   display: block;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  
 }
