@@ -67,7 +67,7 @@ nav {
   float: right;
 }
 
-/* banner section */
+/* banner section 
 #banner {
   background-color: lightgray;
   padding: 32px 24px;
@@ -96,96 +96,87 @@ button {
 
 p {
   font-size: 18px;
+} */
+
+/*second section*/
+
+#second-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 50px;
+  grid-auto-columns: minmax(200px, auto);
+  grid-auto-rows: minmax(200px, auto);
+  padding-bottom: 32px;
 }
 
-/* Practice section */
-
-#practice {
-  padding: 32px 24px;
-  display: inline-block;
-  position: relative;
+.practice img {
+  display: block;
   width: 100%;
   height: auto;
-  top: 570px;
+  grid-column: 1 / span 2;
 }
 
-.student {
-  vertical-align: middle;
+.practice-text h2 {
+  padding-bottom: 24px;
 }
 
-.practice-text {
-  display: inline-block;
-  width: 60%;
+.author {
+  font-style: italic;
+  padding-top: 20px;
+}
+
+.RHS-block {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+}
+
+.orientation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+}
+
+.orientation img {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
-/* Images and text on the RHS */
-
-#RHS-block {
-  position: relative;
-  top: -268px;
+.campus {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
 }
 
-.orientation-img {
-  display: inline-block;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  right: 130px;
-  top: 160px;
+.campus img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.orientation-text {
-  display: inline-block;
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  right: 30px;
-  top: 160px;
+.guest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
 }
 
-.campus-img {
-  display: inline-block;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  right: 130px;
-  top: 350px;
-}
-
-.campus-text {
-  display: inline-block;
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  right: 30px;
-  top: 350px;
-}
-
-.guest-img {
-  display: inline-block;
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  right: 130px;
-  top: 540px;
-}
-
-.guest-text {
-  display: inline-block;
-  position: absolute;
-  width: 200px;
-  height: 300px;
-  right: 30px;
-  top: 540px;
-}
-
-.read-more {
-  text-decoration: none;
-  color: blue;
+.guest img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /*Third section*/
+
+#course-header {
+  text-align: center;
+  color: black;
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+}
+
 #third-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -193,8 +184,7 @@ p {
   grid-auto-columns: minmax(200px, auto);
   grid-auto-rows: minmax(200px, auto);
   background-color: lightgrey;
-  padding: 32px;
-  
+  padding: 32px 72px;
 }
 
 #third-section > div {
@@ -217,5 +207,21 @@ footer {
   height: 40px;
   font-size: 16px;
   border-top: rgb(83, 83, 83) solid 1px;
-  padding-top: 10px;
+  padding-top: 20px;
+}
+
+.footer1 {
+  float: right;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-top: 0;
+  display: block;
+}
+
+.footer2 {
+  float: right;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-top: 0;
+  display: block;
 }
