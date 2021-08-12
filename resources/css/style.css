@@ -6,12 +6,20 @@ body {
   margin-left: 24px;
   margin-right: 24px;
   min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  background-color: lightgray;
 }
 
 /* logo and header */
 
 #header {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   height: 64px;
 }
 
@@ -38,36 +46,30 @@ body {
 
 /* navigation bar */
 
-ul {
-  list-style-type: none;
+nav > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  list-style: none;
 }
 
-li {
-  display: inline;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  padding-right: 17px;
-}
-
-li:last-child {
-  padding-right: 0;
-}
-
-li a {
-  color: black;
+nav a {
+  display: block;
   text-decoration: none;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  text-align: center;
+  padding: 10px;
 }
 
 li a:hover {
   background-color: lightgrey;
-  padding-left: 17px;
-  padding-right: 17px;
 }
 
 nav {
   float: right;
+}
+
+#icon-nav {
+  display: none;
 }
 
 /* banner section */
@@ -75,6 +77,7 @@ nav {
   display: grid;
   grid-template-columns: 2fr 1fr;
   background-color: lightgray;
+  width: 100%;
 }
 .reading img {
   display: block;
@@ -192,6 +195,14 @@ input {
   background-color: white;
 }
 
+.course-text {
+  font-size: 16px;
+}
+
+:link {
+  text-decoration: none;
+}
+
 .course-box img {
   display: block;
   width: 100%;
@@ -225,5 +236,80 @@ footer {
 
 /* Media Queries */
 @media only screen and (max-width: 600px) {
-  
+  #header {
+    display: none;
+  }
+
+  #icon-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .mobile {
+    justify-self: center;
+  }
+
+  #icon-nav a:hover {
+    background-color: lightgray;
+  }
+
+  #banner {
+    grid-template-columns: 1fr;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .practice {
+    display: none;
+  }
+
+  .orientation {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .orientation-text {
+    align-self: center;
+  }
+  .orientation-text p {
+    align-self: center;
+  }
+
+  .campus {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .campus-text {
+    align-self: center;
+  }
+  .guest {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .guest-text {
+    align-self: center;
+  }
+
+  .course-box img {
+    display: none;
+  }
+
+  .course-content p {
+    display: none;
+  }
+  #third-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
