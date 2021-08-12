@@ -142,6 +142,13 @@ input {
   display: block;
   width: 100%;
   height: auto;
+  grid-column-start: 1;
+}
+
+.orientation-text {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  align-self: center;
 }
 
 .campus {
@@ -154,6 +161,13 @@ input {
   display: block;
   width: 100%;
   height: auto;
+  grid-column-start: 1;
+}
+
+.campus-text {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  align-self: center;
 }
 
 .guest {
@@ -166,6 +180,19 @@ input {
   display: block;
   width: 100%;
   height: auto;
+  grid-column-start: 1;
+}
+
+.guest-text {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  align-self: center;
+}
+.read-more {
+  padding: 8px;
+}
+.mob img {
+  display: none;
 }
 
 /*Third section*/
@@ -221,16 +248,20 @@ footer {
 .footer1 {
   float: right;
   font-size: 16px;
-  padding-right: 10px;
-  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+
   display: block;
 }
 
 .footer2 {
   float: right;
   font-size: 16px;
-  padding-right: 10px;
-  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+
   display: block;
 }
 
@@ -264,44 +295,55 @@ footer {
   .practice {
     display: none;
   }
-
+  .orientation img,
+  .campus img,
+  .guest img {
+    display: none;
+  }
   .orientation {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
   }
-
-  .orientation-text {
-    align-self: center;
-  }
-  .orientation-text p {
-    align-self: center;
-  }
-
   .campus {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .guest {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mob img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 170%;
+    align-self: center;
+  }
+  .orientation-text {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: start;
+    line-height: 20%;
   }
 
   .campus-text {
-    align-self: center;
-  }
-  .guest {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: start;
+    line-height: 20%;
   }
 
   .guest-text {
-    align-self: center;
-  }
-
-  .course-box img {
-    display: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: start;
+    line-height: 20%;
   }
 
   .course-content p {
