@@ -17,6 +17,10 @@ a:hover {
   background-color: lightgray;
 }
 
+a {
+  color: black;
+}
+
 /* logo and header */
 
 #header {
