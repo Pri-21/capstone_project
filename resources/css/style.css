@@ -270,7 +270,7 @@ footer {
   #header {
     display: none;
   }
-
+  /*nav bar */
   #icon-nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -285,13 +285,14 @@ footer {
   #icon-nav a:hover {
     background-color: lightgray;
   }
-
+  /*Banner*/
   #banner {
     grid-template-columns: 1fr;
   }
   .banner-text {
     text-align: center;
   }
+  /*second section*/
   .practice {
     display: none;
   }
@@ -300,6 +301,7 @@ footer {
   .guest img {
     display: none;
   }
+
   .orientation {
     display: grid;
     grid-template-columns: 1fr;
@@ -314,7 +316,7 @@ footer {
   }
   .mob img {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     width: 170%;
     align-self: center;
@@ -326,6 +328,7 @@ footer {
     grid-column: 1;
     justify-self: start;
     line-height: 20%;
+    width: 170%;
   }
 
   .campus-text {
@@ -335,6 +338,7 @@ footer {
     grid-column: 1;
     justify-self: start;
     line-height: 20%;
+    width: 170%;
   }
 
   .guest-text {
@@ -344,14 +348,26 @@ footer {
     grid-column: 1;
     justify-self: start;
     line-height: 20%;
+    width: 170%;
   }
 
+  /*Third section*/
   .course-content p {
     display: none;
   }
+  .course-box > img {
+    display: none;
+  }
   #third-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    display: block;
+  }
+  .course-content h3 {
+    padding: 20px;
+  }
+
+  /*footer*/
+  .footer1,
+  .footer2 {
+    display: none;
   }
 }
