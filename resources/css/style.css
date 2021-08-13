@@ -17,7 +17,7 @@ a:hover {
   background-color: lightgray;
 }
 
-a {
+a:link {
   color: black;
 }
 
